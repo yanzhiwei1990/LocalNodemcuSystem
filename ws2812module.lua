@@ -46,10 +46,18 @@ end
 function ws2812module.lighttripwithrawdata(colordata)
   print(string.format("lighttrip raw data size=%d", string.len(colordata)))
   local i = 1
+  local red = 0
+  local green = 0
+  local blue = 0
+  local white = 0
+  local power = false
   for i=1,60 do
-     local red = string.byte(colordata, (i - 1) * 3 + 1)
-     local green = string.byte(colordata, (i - 1) * 3 + 2)
-     local blue = string.byte(colordata, (i - 1) * 3 + 3)
+     red = string.byte(colordata, (i - 1) * 3 + 1)
+     green = string.byte(colordata, (i - 1) * 3 + 2)
+     blue = string.byte(colordata, (i - 1) * 3 + 3)
+     if (red > 0 or green > 0 or blue > 0) then
+        power = true
+     end
      buffer1:set(i, green, red, blue)
      if (debug) then
         print(string.format("lighttripwithrawdata i=%d: r=%d,g=%d,b=%d", i, red, green, blue))
@@ -58,14 +66,22 @@ function ws2812module.lighttripwithrawdata(colordata)
   local offset = 60 * 3
   local i = 1
   for i=1,60 do
-     local red = string.byte(colordata, (i - 1) * 4 + 1 + offset)
-     local green = string.byte(colordata, (i - 1) * 4 + 2 + offset)
-     local blue = string.byte(colordata, (i - 1) * 4 + 3 + offset)
-     local white = string.byte(colordata, (i - 1) * 4 + 4 + offset)
+     red = string.byte(colordata, (i - 1) * 4 + 1 + offset)
+     green = string.byte(colordata, (i - 1) * 4 + 2 + offset)
+     blue = string.byte(colordata, (i - 1) * 4 + 3 + offset)
+     white = string.byte(colordata, (i - 1) * 4 + 4 + offset)
+     if (red > 0 or green > 0 or blue > 0 or white > 0) then
+        power = true
+     end
      buffer2:set(i, green, red, blue , white)
      if (debug) then
         print(string.format("lighttripwithrawdata i=%d: r=%d,g=%d,b=%d,w=%d", i, red, green, blue, white))
      end
+  end
+  if (power) then
+     ws2812module.setpower(true)
+  else
+     ws2812module.setpower(false)
   end
   ws2812.write(buffer1)
   ws2812.write(buffer2)

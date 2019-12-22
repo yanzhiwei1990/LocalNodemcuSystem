@@ -54,6 +54,12 @@ end
 node.setcpufreq(node.CPU160MHZ)
 gpio.mode(0, gpio.OUTPUT)
 gpio.write(0, gpio.HIGH)
+--led power off
+gpio.mode(1, gpio.OUTPUT)
+gpio.write(1, gpio.LOW)
+--led desktop off
+gpio.mode(5, gpio.OUTPUT)
+gpio.write(5, gpio.LOW)
 
 mytimer = tmr.create()
 mytimer:register(1000, tmr.ALARM_AUTO, connect)

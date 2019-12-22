@@ -290,7 +290,7 @@ end
 
 function sendPower(sck)
     local value = adc.read(0)
-    --print("sendPower value=", string.format("value:%d",value))
+    print("sendPower value=", string.format("value:%d",value))
     if value > 500 then
         sck:send("poweronok\n")
     else
