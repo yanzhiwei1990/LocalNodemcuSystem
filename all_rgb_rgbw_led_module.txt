@@ -1,0 +1,135 @@
+nodemcu#01201234567890rgbled0123450123456789data
+6E 6F 64 65 6D 63 75 23 30 31 32 30 31 32 33 34 35 36 37 38 39 30 72 67 62 6C 65 64 30 31 32 33 34 35 30 31 32 33 34 35 36 37 38 39 64 61 74 61 
+00 00 01 a4
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+red green blue
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
+red green blue white
